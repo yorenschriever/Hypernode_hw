@@ -1769,6 +1769,8 @@ Based on the following sources:
 <description>MCU</description>
 <plain>
 <text x="114.3" y="68.58" size="1.778" layer="91">Do not use IO0. (RMII Clk)</text>
+<text x="114.3" y="63.5" size="1.778" layer="91">Input only</text>
+<text x="114.3" y="50.8" size="1.778" layer="91">Input only</text>
 </plain>
 <instances>
 <instance part="U$3" gate="G$1" x="7.62" y="68.58" smashed="yes"/>
