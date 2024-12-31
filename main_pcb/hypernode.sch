@@ -1768,7 +1768,8 @@ Based on the following sources:
 <sheet>
 <description>MCU</description>
 <plain>
-<text x="114.3" y="68.58" size="1.778" layer="91">Do not use IO0. (RMII Clk)</text>
+<text x="127" y="68.58" size="1.778" layer="91">Do not use IO0. 
+(RMII Clk)</text>
 <text x="114.3" y="63.5" size="1.778" layer="91">Input only</text>
 <text x="114.3" y="50.8" size="1.778" layer="91">Input only</text>
 </plain>
@@ -2373,11 +2374,6 @@ Based on the following sources:
 <wire x1="157.48" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
 <label x="152.4" y="71.12" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="PROGRAM" gate="A" pin="5"/>
-<wire x1="15.24" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-7.62" y="-2.54" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="WS5" class="0">
 <segment>
@@ -2611,12 +2607,28 @@ Based on the following sources:
 <wire x1="73.66" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="IO0" class="0">
+<segment>
+<pinref part="U$17" gate="G$1" pin="IO0"/>
+<wire x1="109.22" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
+<label x="121.92" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PROGRAM" gate="A" pin="5"/>
+<wire x1="15.24" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-7.62" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

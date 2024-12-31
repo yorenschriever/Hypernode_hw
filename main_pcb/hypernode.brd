@@ -943,7 +943,7 @@ Based on the following sources:
 <attribute name="VALUE" x="15.67" y="-0.23875" size="0.6096" layer="27" font="vector" align="center"/>
 </element>
 <element name="R5" library="Multischriever" package="ADAFRUIT_R0603" value="1K" x="47.72" y="48.18" smashed="yes" rot="R270">
-<attribute name="VALUE" x="46.45" y="48.18" size="0.8128" layer="27" font="vector" rot="R270" align="center"/>
+<attribute name="VALUE" x="46.45" y="47.545" size="0.8128" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 </elements>
 <signals>
@@ -1091,9 +1091,9 @@ Based on the following sources:
 <vertex x="6.445" y="100.885"/>
 </polygon>
 <wire x1="18.51" y1="22.5205875" x2="18.51" y2="22.145" width="0.254" layer="1"/>
-<wire x1="19.9832" y1="23.9937875" x2="18.51" y2="22.5205875" width="0.254" layer="1"/>
-<wire x1="19.9832" y1="25.7826125" x2="40.8311875" y2="46.6306" width="0.254" layer="1"/>
-<wire x1="19.9832" y1="25.7826125" x2="19.9832" y2="23.9937875" width="0.254" layer="1"/>
+<wire x1="20.6182" y1="24.6287875" x2="18.51" y2="22.5205875" width="0.254" layer="1"/>
+<wire x1="20.6182" y1="26.4176125" x2="40.8311875" y2="46.6306" width="0.254" layer="1"/>
+<wire x1="20.6182" y1="26.4176125" x2="20.6182" y2="24.6287875" width="0.254" layer="1"/>
 <wire x1="40.8311875" y1="46.6306" x2="40.8311875" y2="51.6344" width="0.254" layer="1"/>
 <wire x1="40.8311875" y1="51.6344" x2="44.1894" y2="51.6344" width="0.254" layer="1"/>
 <wire x1="48.965" y1="56.41" x2="51.475" y2="56.41" width="0.254" layer="1"/>
@@ -1267,21 +1267,6 @@ Based on the following sources:
 <wire x1="66.1562" y1="32.3503875" x2="62.3008125" y2="28.495" width="0.254" layer="1"/>
 <wire x1="52.585" y1="28.495" x2="46.45" y2="22.36" width="0.254" layer="1"/>
 <wire x1="62.3008125" y1="28.495" x2="52.585" y2="28.495" width="0.254" layer="1"/>
-<contactref element="PROGRAM" pad="5"/>
-<wire x1="45.18" y1="48.815" x2="15.97" y2="48.815" width="0.254" layer="16"/>
-<wire x1="45.18" y1="48.815" x2="46.45" y2="50.085" width="0.254" layer="16"/>
-<via x="46.45" y="50.085" extent="1-16" drill="0.35"/>
-<wire x1="46.45" y1="50.085" x2="48.355" y2="50.085" width="0.254" layer="1"/>
-<wire x1="48.355" y1="50.085" x2="48.99" y2="49.45" width="0.254" layer="1"/>
-<wire x1="48.99" y1="49.45" x2="48.99" y2="38.655" width="0.254" layer="1"/>
-<wire x1="49.752" y1="37.893" x2="65.5" y2="37.893" width="0.254" layer="1"/>
-<wire x1="66.08" y1="32.8892" x2="66.08" y2="37.313" width="0.254" layer="1"/>
-<wire x1="66.08" y1="37.313" x2="65.5" y2="37.893" width="0.254" layer="1"/>
-<wire x1="48.99" y1="38.655" x2="49.752" y2="37.893" width="0.254" layer="1"/>
-<wire x1="15.24" y1="49.545" x2="15.24" y2="51.435" width="0.254" layer="16"/>
-<wire x1="15.24" y1="51.435" x2="13.415" y2="53.26" width="0.254" layer="16"/>
-<wire x1="13.415" y1="53.26" x2="12.795" y2="53.26" width="0.254" layer="16"/>
-<wire x1="15.97" y1="48.815" x2="15.24" y2="49.545" width="0.254" layer="16"/>
 </signal>
 <signal name="WS5">
 <contactref element="U$17" pad="P_IO15"/>
@@ -1528,6 +1513,23 @@ Based on the following sources:
 </signal>
 <signal name="N$20">
 <contactref element="U$17" pad="P_3V3@1"/>
+</signal>
+<signal name="IO0">
+<contactref element="U$17" pad="P_IO0"/>
+<contactref element="PROGRAM" pad="5"/>
+<wire x1="12.795" y1="53.26" x2="13.89" y2="53.26" width="0.254" layer="16"/>
+<wire x1="13.89" y1="53.26" x2="13.97" y2="53.34" width="0.254" layer="16"/>
+<wire x1="13.97" y1="53.34" x2="15.24" y2="52.07" width="0.254" layer="16"/>
+<wire x1="15.24" y1="52.07" x2="15.24" y2="49.53" width="0.254" layer="16"/>
+<wire x1="15.24" y1="49.53" x2="15.875" y2="48.895" width="0.254" layer="16"/>
+<wire x1="15.875" y1="48.895" x2="45.085" y2="48.895" width="0.254" layer="16"/>
+<via x="46.355" y="50.165" extent="1-16" drill="0.35"/>
+<wire x1="46.355" y1="50.165" x2="48.26" y2="50.165" width="0.254" layer="1"/>
+<wire x1="48.26" y1="50.165" x2="48.895" y2="49.53" width="0.254" layer="1"/>
+<wire x1="48.18" y1="45.005" x2="43.91" y2="45.005" width="0.254" layer="1"/>
+<wire x1="45.085" y1="48.895" x2="46.355" y2="50.165" width="0.254" layer="16"/>
+<wire x1="48.895" y1="49.53" x2="48.895" y2="45.72" width="0.254" layer="1"/>
+<wire x1="48.895" y1="45.72" x2="48.18" y2="45.005" width="0.254" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
