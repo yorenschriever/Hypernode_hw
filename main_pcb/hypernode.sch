@@ -1757,8 +1757,6 @@ Based on the following sources:
 <part name="PROGRAM" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X6" device="" package3d_urn="urn:adsk.eagle:package:22472/2"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R7" library="Multischriever" deviceset="RESISTOR" device="" value="10K"/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R6" library="Multischriever" deviceset="RESISTOR" device="" value="180R"/>
 <part name="LED_STATUS" library="Multischriever" deviceset="LED" device="0603"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -1975,13 +1973,6 @@ Based on the following sources:
 <instance part="+3V3" gate="G$1" x="5.08" y="12.7" smashed="yes">
 <attribute name="VALUE" x="2.54" y="12.7" size="1.778" layer="96"/>
 </instance>
-<instance part="R7" gate="G$1" x="116.84" y="35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="114.3" y="35.56" size="0.6096" layer="95" rot="R270" align="center"/>
-<attribute name="VALUE" x="113.03" y="35.56" size="0.6096" layer="96" rot="R270" align="center"/>
-</instance>
-<instance part="GND10" gate="1" x="116.84" y="27.94" smashed="yes">
-<attribute name="VALUE" x="114.3" y="25.4" size="1.778" layer="96"/>
-</instance>
 <instance part="R6" gate="G$1" x="121.92" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="121.92" y="96.52" size="0.6096" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="121.92" y="97.79" size="0.6096" layer="96" rot="R180" align="center"/>
@@ -2151,10 +2142,6 @@ Based on the following sources:
 <pinref part="PROGRAM" gate="A" pin="6"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="LED_STATUS" gate="G$1" pin="C"/>
@@ -2367,12 +2354,8 @@ Based on the following sources:
 <net name="WS4" class="0">
 <segment>
 <pinref part="U$17" gate="G$1" pin="IO2"/>
-<wire x1="109.22" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
 <label x="119.38" y="45.72" size="1.778" layer="95"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="40.64" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
-<junction x="116.84" y="45.72"/>
+<wire x1="109.22" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="A1"/>

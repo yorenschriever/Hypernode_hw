@@ -933,9 +933,6 @@ Based on the following sources:
 <attribute name="POPULARITY" value="79" x="12.795" y="49.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="15.97" y="41.83" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R7" library="Multischriever" package="ADAFRUIT_R0603" value="10K" x="46.45" y="21.51" smashed="yes" rot="R270">
-<attribute name="VALUE" x="47.72" y="21.51" size="0.8128" layer="27" font="vector" rot="R270" align="center"/>
-</element>
 <element name="R6" library="Multischriever" package="ADAFRUIT_R0603" value="180R" x="15.67" y="3.73" smashed="yes">
 <attribute name="VALUE" x="15.67" y="5" size="0.8128" layer="27" font="vector" rot="R180" align="center"/>
 </element>
@@ -1001,7 +998,6 @@ Based on the following sources:
 <contactref element="U$17" pad="P_GND@4"/>
 <contactref element="C2" pad="2"/>
 <contactref element="PROGRAM" pad="6"/>
-<contactref element="R7" pad="2"/>
 <contactref element="LED_STATUS" pad="C"/>
 <polygon width="0.254" layer="16">
 <vertex x="5.175" y="-0.715"/>
@@ -1023,9 +1019,6 @@ Based on the following sources:
 <wire x1="69.89" y1="31.455" x2="69.89" y2="30.455" width="0.254" layer="1"/>
 <wire x1="69.89" y1="30.455" x2="69.945" y2="30.4" width="0.254" layer="1"/>
 <via x="69.945" y="30.4" extent="1-16" drill="0.35"/>
-<wire x1="45.165" y1="18.51" x2="45.57" y2="18.51" width="0.254" layer="1"/>
-<wire x1="46.45" y1="20.66" x2="46.45" y2="19.39" width="0.254" layer="1"/>
-<wire x1="46.45" y1="19.39" x2="45.57" y2="18.51" width="0.254" layer="1"/>
 <wire x1="51.475" y1="50.11" x2="50.26" y2="48.895" width="0.254" layer="1"/>
 <wire x1="50.26" y1="48.895" x2="50.26" y2="48.235" width="0.254" layer="1"/>
 <wire x1="51.475" y1="50.11" x2="51.475" y2="48.29" width="0.254" layer="1"/>
@@ -1312,16 +1305,13 @@ Based on the following sources:
 <signal name="WS4">
 <contactref element="U$17" pad="P_IO2"/>
 <contactref element="IC1" pad="2"/>
-<contactref element="R7" pad="1"/>
 <wire x1="66.08" y1="32.8892" x2="66.1562" y2="32.813" width="0.254" layer="1"/>
 <wire x1="66.1562" y1="32.813" x2="66.1562" y2="32.3503875" width="0.254" layer="1"/>
 <wire x1="66.1562" y1="32.3503875" x2="62.9358125" y2="29.13" width="0.254" layer="1"/>
-<wire x1="53.22" y1="29.13" x2="46.45" y2="22.36" width="0.254" layer="1"/>
-<wire x1="62.9358125" y1="29.13" x2="53.22" y2="29.13" width="0.254" layer="1"/>
-<wire x1="46.45" y1="22.36" x2="46.315" y2="22.225" width="0.254" layer="1"/>
-<wire x1="46.315" y1="22.225" x2="44.45" y2="22.225" width="0.254" layer="1"/>
-<wire x1="44.45" y1="22.225" x2="43.275" y2="21.05" width="0.254" layer="1"/>
-<wire x1="43.275" y1="21.05" x2="43.275" y2="20.875" width="0.254" layer="1"/>
+<wire x1="62.9358125" y1="29.13" x2="53.34" y2="29.13" width="0.254" layer="1"/>
+<wire x1="43.275" y1="20.955" x2="43.275" y2="20.875" width="0.254" layer="1"/>
+<wire x1="53.34" y1="29.13" x2="45.165" y2="20.955" width="0.254" layer="1"/>
+<wire x1="45.165" y1="20.955" x2="43.275" y2="20.955" width="0.254" layer="1"/>
 </signal>
 <signal name="WS5">
 <contactref element="U$17" pad="P_IO15"/>

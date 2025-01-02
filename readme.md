@@ -13,14 +13,12 @@ The device is based on the WT32-ETH01. The pcbs are made with AutoDesk Eagle.
 |1|Line driver||74HCT254D|SO20W||
 |1|DMX transceiver|MAX488||SOIC-8||
 |2|Decoupling capacitor|Ceramic capacitor|100 nF|0603||
-|8|Protection resistor|Thin film resistor|100 Ohm|0603||
+|10|Protection resistor|Thin film resistor|100 Ohm|0603||
 |3|RJ45 Connectors|||||
-|1|Name|Resistor|180 Ohm|0603|||
-|1|Name|Resistor|220 Ohm|0603|||
+|1|Resistor for led|Resistor|180 Ohm|0603|||
+|1|Resistor for led|Resistor|220 Ohm|0603|||
 |2|Status and power led|SMD LED|Red|0603|||
-|1|Protection resistor|Thin film resistor|1K Ohm|0603||
-|1|Pull down resistor|Thin film resistor|10K Ohm|0603||
-|1|Power supply  cap|Tantalum Capacitor|470 uF|D Type||
+|1|Power supply cap|Tantalum Capacitor|470 uF|D Type||
 |1|Rectifier diode|||SMB||
 |1|Step down module|||||
 |1|JST XH connector M+F|2 Pin||||
