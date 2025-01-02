@@ -10,13 +10,12 @@ The device is based on the WT32-ETH01. The pcbs are made with AutoDesk Eagle.
 |Amount|Name|Type|Value|Size|Price|Link|
 |-|-|-|-|-|-|-|
 |1|Controller||WT32-ETH01||||
-|1|Line driver||74HCT254D|SO20W||
+|1|Line driver||74HCT245D|SO20W||
 |1|DMX transceiver|MAX488||SOIC-8||
 |2|Decoupling capacitor|Ceramic capacitor|100 nF|0603||
 |10|Protection resistor|Thin film resistor|100 Ohm|0603||
 |3|RJ45 Connectors|||||
-|1|Resistor for led|Resistor|180 Ohm|0603|||
-|1|Resistor for led|Resistor|220 Ohm|0603|||
+|2|Resistor for led|Resistor|180 Ohm|0603|||
 |2|Status and power led|SMD LED|Red|0603|||
 |1|Power supply cap|Tantalum Capacitor|470 uF|D Type||
 |1|Rectifier diode|||SMB||

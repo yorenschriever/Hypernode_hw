@@ -1734,10 +1734,9 @@ Based on the following sources:
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D2" library="Multischriever" deviceset="DIODE_SMB" device=""/>
-<part name="R51" library="Multischriever" deviceset="RESISTOR" device="" value="220R"/>
+<part name="R51" library="Multischriever" deviceset="RESISTOR" device="" value="180R"/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LED_PWR" library="Multischriever" deviceset="LED" device="0603"/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U$15" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH"/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X2" library="Multischriever" deviceset="JST-XH-CONNECTOR-02-PIN" device=""/>
@@ -1762,6 +1761,7 @@ Based on the following sources:
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="Multischriever" deviceset="RESISTOR" device="" value="100R"/>
 <part name="R8" library="Multischriever" deviceset="RESISTOR" device="" value="100R"/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1903,9 +1903,6 @@ Based on the following sources:
 <attribute name="NAME" x="41.91" y="99.06" size="0.6096" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="41.91" y="100.33" size="0.6096" layer="96" rot="R180" align="center"/>
 </instance>
-<instance part="P+4" gate="1" x="27.94" y="99.06" smashed="yes">
-<attribute name="VALUE" x="25.4" y="99.06" size="1.778" layer="96"/>
-</instance>
 <instance part="U$15" gate="G$1" x="228.6" y="-50.8" smashed="yes">
 <attribute name="NAME" x="220.98" y="-37.592" size="1.778" layer="95"/>
 <attribute name="VALUE" x="220.98" y="-63.5" size="1.778" layer="95"/>
@@ -1991,6 +1988,9 @@ Based on the following sources:
 <instance part="R8" gate="G$1" x="5.08" y="2.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.08" y="5.08" size="0.6096" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="5.08" y="6.35" size="0.6096" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="+3V2" gate="G$1" x="27.94" y="99.06" smashed="yes">
+<attribute name="VALUE" x="30.48" y="101.6" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -2181,10 +2181,6 @@ Based on the following sources:
 <wire x1="152.4" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R51" gate="G$1" pin="2"/>
-<pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="X4" gate="-1" pin="S"/>
 <wire x1="5.08" y1="88.9" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -2263,6 +2259,10 @@ Based on the following sources:
 <wire x1="15.24" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="DMXIN" class="0">

@@ -911,7 +911,7 @@ Based on the following sources:
 <element name="D2" library="Multischriever" package="DIODE_SMB" value="" x="57.825" y="69.135" smashed="yes">
 <attribute name="VALUE" x="57.825" y="66.595" size="0.6096" layer="27" font="vector" align="center"/>
 </element>
-<element name="R51" library="Multischriever" package="ADAFRUIT_R0603" value="220R" x="8.33" y="3.73" smashed="yes">
+<element name="R51" library="Multischriever" package="ADAFRUIT_R0603" value="180R" x="8.33" y="3.73" smashed="yes">
 <attribute name="VALUE" x="8.215" y="5.02" size="0.8128" layer="27" font="vector" align="center"/>
 </element>
 <element name="LED_PWR" library="Multischriever" package="ADAFRUIT_CHIPLED_0603" value="" x="8.33" y="1.03125" smashed="yes" rot="R270">
@@ -1109,7 +1109,6 @@ Based on the following sources:
 <contactref element="C5" pad="1"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="IC1" pad="20"/>
-<contactref element="R51" pad="2"/>
 <contactref element="X4" pad="1"/>
 <contactref element="U$17" pad="P_5V"/>
 <contactref element="C2" pad="1"/>
@@ -1136,14 +1135,7 @@ Based on the following sources:
 <wire x1="81.16" y1="34.425" x2="71.16" y2="34.425" width="0.254" layer="1"/>
 <wire x1="81.16" y1="34.425" x2="82.01" y2="33.575" width="0.254" layer="1"/>
 <wire x1="82.01" y1="33.575" x2="82.01" y2="30.3238" width="0.254" layer="1"/>
-<wire x1="19.605" y1="17.065" x2="19.605" y2="20.875" width="0.254" layer="1"/>
-<wire x1="19.605" y1="17.065" x2="19.05" y2="16.51" width="0.254" layer="1"/>
-<wire x1="19.05" y1="16.51" x2="10.795" y2="16.51" width="0.254" layer="1"/>
-<wire x1="10.795" y1="16.51" x2="9.08806875" y2="14.80306875" width="0.254" layer="1"/>
 <wire x1="67.35" y1="32.8892" x2="67.35" y2="22.8308" width="0.254" layer="1"/>
-<wire x1="19.605" y1="20.875" x2="17.875" y2="20.875" width="0.254" layer="1"/>
-<wire x1="9.08806875" y1="14.80306875" x2="9.08806875" y2="3.82193125" width="0.254" layer="1"/>
-<wire x1="9.08806875" y1="3.82193125" x2="9.18" y2="3.73" width="0.254" layer="1"/>
 <wire x1="67.27964375" y1="38.1" x2="67.27964375" y2="32.95955625" width="0.254" layer="1"/>
 <wire x1="67.27964375" y1="32.95955625" x2="67.35" y2="32.8892" width="0.254" layer="1"/>
 <wire x1="67.35" y1="32.8892" x2="67.6158" y2="33.155" width="0.254" layer="1"/>
@@ -1388,6 +1380,11 @@ Based on the following sources:
 <wire x1="12.795" y1="43.1" x2="16.605" y2="43.1" width="0.508" layer="1"/>
 <wire x1="17.24" y1="43.735" x2="16.605" y2="43.1" width="0.508" layer="1"/>
 <wire x1="17.24" y1="43.735" x2="17.875" y2="43.735" width="0.254" layer="1"/>
+<contactref element="R51" pad="2"/>
+<wire x1="12.795" y1="43.1" x2="10.715" y2="43.1" width="0.254" layer="1"/>
+<wire x1="6.985" y1="5.925" x2="9.18" y2="3.73" width="0.254" layer="1"/>
+<wire x1="10.715" y1="43.1" x2="6.985" y2="39.37" width="0.254" layer="1"/>
+<wire x1="6.985" y1="39.37" x2="6.985" y2="5.925" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="IC1" pad="18"/>
